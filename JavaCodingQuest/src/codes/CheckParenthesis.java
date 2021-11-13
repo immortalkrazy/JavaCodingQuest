@@ -66,6 +66,7 @@ public class CheckParenthesis {
             }
 
             return stack.isEmpty();
+
       }
 
 }
