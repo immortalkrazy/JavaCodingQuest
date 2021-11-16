@@ -17,7 +17,6 @@ public class CharNumberCount {
 
       }
 
-      @SuppressWarnings("deprecation")
       public static void charValueCount(String str) {
 
             HashMap<Character, Integer> map = new HashMap<>();
@@ -27,18 +26,22 @@ public class CharNumberCount {
                   Integer value = map.get(c);
 
                   if (value != null) {
-                        map.put(c, new Integer(value + 1));
+                        map.put(c, Integer.valueOf(value + 1));
                   } else {
                         map.put(c, 1);
                   }
             }
+            // create a set from map in order to use sort on array
             Set<Entry<Character, Integer>> set = map.entrySet();
+            // list is created from set to sort it with sort()
             List<Entry<Character, Integer>> list = new ArrayList<Entry<Character, Integer>>(set);
+            // sort the list with new comparator based on our map data
             Collections.sort(list, new Comparator<Map.Entry<Character, Integer>>() {
 
+                  // compare method implication
                   @Override
                   public int compare(Entry<Character, Integer> o1, Entry<Character, Integer> o2) {
-                        // TODO Auto-generated method stub
+                        // comparison based off of value which is Integer object in our case
                         return o2.getValue().compareTo(o1.getValue());
                   }
             });
