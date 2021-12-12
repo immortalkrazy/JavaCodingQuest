@@ -23,9 +23,7 @@ public class MinMaxPrint {
 
       public static void printMinMax(List<Integer> arr) {
             // initialize everything with 0
-            int minElement = 0;
-            int maxElement = 0;
-            int sum = 0;
+            long minElement = 0, maxElement = 0, sum = 0;
             // min max and sum is 1st element
             minElement = arr.get(0);
             maxElement = minElement;
