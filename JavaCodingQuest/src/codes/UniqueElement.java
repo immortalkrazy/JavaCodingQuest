@@ -30,7 +30,6 @@ public class UniqueElement {
                   if (!set.add(list.get(i))) {
                         set.remove(list.get(i));
                   }
-
             }
             List<Integer> lst = new ArrayList<>(set);
             return lst.get(0);
