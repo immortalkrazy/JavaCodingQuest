@@ -45,10 +45,27 @@ public class JsonParse {
 
             JSONArray ja = (JSONArray) jo.get("data");
 
-            List<Object> jList = new ArrayList<>(ja);
-            for (Object obj : jList) {
-                  System.out.println(obj);
+            Long m1 = (long) 1;
+            Long m2 = (long) 1;
+
+            for (int i = 0; i < ja.size(); i++) {
+
+                  JSONObject data = (JSONObject) ja.get(i);
+                  Long num = (Long) data.get("num_comments");
+                  String author = (String) data.get("author");
+
+                  if (num > m1) {
+                        String s = num.toString() + " " + author;
+                        list.add(s);
+                        m1 = num;
+                  }
             }
+            System.out.println(list);
+
+//            List<Object> jList = new ArrayList<>(ja);
+//            for (Object obj : jList) {
+//                  System.out.println(obj);
+//            }
 
 //            Object obj = jp.parse(reader);
 //            JSONObject articleJO = (JSONObject) obj;

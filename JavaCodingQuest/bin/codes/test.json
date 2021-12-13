@@ -96,7 +96,7 @@
             "title": null,
             "url": null,
             "author": "olalonde",
-            "num_comments": null,
+            "num_comments": 9,
             "story_id": null,
             "story_title": "Guacamole – A clientless remote desktop gateway",
             "story_url": "https://guacamole.incubator.apache.org/",
