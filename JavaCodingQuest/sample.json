@@ -5,7 +5,7 @@
     "total_pages": 5,
     "data": [
         {
-            "title": "A Message to Our Customers",
+            "name": "A Message to Our Customers",
             "url": "http://www.apple.com/customer-letter/",
             "author": "epaga",
             "num_comments": 967,
@@ -16,7 +16,7 @@
             "created_at": 1455698317
         },
         {
-            "title": "ìWas isolated from 1999 to 2006 with a 486. Built my own late 80s OSî",
+            "title": "‚ÄúWas isolated from 1999 to 2006 with a 486. Built my own late 80s OS‚Äù",
             "url": "http://imgur.com/gallery/hRf2trV",
             "author": "epaga",
             "num_comments": 265,
@@ -27,7 +27,7 @@
             "created_at": 1418517626
         },
         {
-            "title": "Appleís declining software quality",
+            "title": "Apple‚Äôs declining software quality",
             "url": "http://sudophilosophical.com/2016/02/04/apples-declining-software-quality/",
             "author": "epaga",
             "num_comments": 705,
@@ -60,7 +60,7 @@
             "created_at": 1556274921
         },
         {
-            "title": "Why Iím Suing the US Government",
+            "title": "Why I‚Äôm Suing the US Government",
             "url": "https://www.bunniestudios.com/blog/?p=4782",
             "author": "saintamh",
             "num_comments": 305,
@@ -98,7 +98,7 @@
             "author": "olalonde",
             "num_comments": null,
             "story_id": null,
-            "story_title": "Guacamole ñ A clientless remote desktop gateway",
+            "story_title": "Guacamole ‚Äì A clientless remote desktop gateway",
             "story_url": "https://guacamole.incubator.apache.org/",
             "parent_id": 6547669,
             "created_at": 1381763543
