@@ -5,23 +5,27 @@ import java.util.Scanner;
 public class ReversingName {
       public static void main(String[] args) {
 
-            Scanner sc = new Scanner(System.in);
+            try (Scanner sc = new Scanner(System.in)) {
 
-            System.out.println("Type your name:");
-            String name = sc.nextLine();
-            int numberOfChars = name.length();
-            System.out.println(numberOfChars);
-
-            String reversedName = "";
-            int counter = 1;
-
-            while (counter <= numberOfChars) {
-                  char charAtPosition = name.charAt(numberOfChars - counter);
-                  reversedName = reversedName + charAtPosition;
-                  counter++;
+                  System.out.println("Type your name:");
+                  String name = sc.nextLine();
+//           
+                  System.out.println("Name is Reverse Order: " + reverseName(name));
             }
-
-            System.out.println("Name is Reverse Order: " + reversedName);
-            sc.close();
       }
+
+      public static String reverseName(String str) {
+
+            String revName = "";
+            int numberOfChars = str.length();
+            int ctr = 1;
+
+            while (ctr <= numberOfChars) {
+                  char charAtPos = str.charAt(numberOfChars - ctr);
+                  revName = revName + charAtPos;
+                  ctr++;
+            }
+            return revName;
+      }
+
 }
