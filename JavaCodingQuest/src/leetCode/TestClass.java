@@ -4,7 +4,7 @@ public class TestClass {
 
       public static void main(String[] args) {
 
-            // Test for RomanToInt
+            // TestRuns for RomanToInt
             RomanToInt ri = new RomanToInt();
 
             System.out.println(ri.romanToInt("XXVII"));
