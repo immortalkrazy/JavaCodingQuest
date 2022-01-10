@@ -28,6 +28,7 @@ public class TestRuns {
 //            System.out.println(str.substring(1, 5));
 
             System.out.println(Integer.parseInt(s));
+
       }
 
 }
