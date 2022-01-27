@@ -29,6 +29,9 @@ public class TestRuns {
 
             System.out.println(Integer.parseInt(s));
 
+            String st = "I like java";
+            System.out.println(st.length());
+
       }
 
 }

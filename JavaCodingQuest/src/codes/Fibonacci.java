@@ -7,10 +7,10 @@ public class Fibonacci {
 
       public static void main(String[] args) {
 
-            int num = 50;
+            int num = 92;
 
             long start1 = System.currentTimeMillis();
-            System.out.println(fib(num));
+//            System.out.println(fib(num));
             long end1 = System.currentTimeMillis();
             System.out.println((end1 - start1) / 1000);
 
@@ -20,6 +20,11 @@ public class Fibonacci {
             System.out.println(fibMemo(num));
             long end2 = System.currentTimeMillis();
             System.out.println((end2 - start2) / 1000);
+
+            // print all the fibonacci numbers to the n
+            for (int i = 0; i <= num; i++) {
+                  System.out.print(fibMemo(i) + " ");
+            }
       }
 
       public static long fib(int num) {
